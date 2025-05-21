@@ -38,10 +38,10 @@ while ($true) {
     }
 
     if ($ramValueMB -lt $ramThreshold) {
-        Write-Host "CRITICAL: LOW MEMORY AVAILABLE! ($ramValueGB)" -ForegroundColor Red
+        Write-Host "CRITICAL: LOW MEMORY AVAILABLE! ($ramValueGB GB)" -ForegroundColor Red
     }
     else {
-        Write-Host "Memory Usage: $ramValueGB" -ForegroundColor Green
+        Write-Host "Memory Usage: $ramValueGB GB" -ForegroundColor Green
     }
 
     # Wait before repeating
